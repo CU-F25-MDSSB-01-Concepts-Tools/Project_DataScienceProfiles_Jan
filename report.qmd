@@ -1,0 +1,283 @@
+---
+title: "Project - Data Science Profiles"
+format:   
+  html: 
+    toc: true
+    toc-depth: 3
+    embed-resources: true
+    code-fold: true
+    number-sections: true
+---
+
+```{r}
+#| label: packages-data
+#| message: false
+
+
+```
+
+
+## My Data Science Profile {#sec-1}
+
+I am **Replace with your name!**.
+
+*Replace with quarto markdown code showing an image of yourself!*
+
+This is my Data Science Profile:
+
+```{r}
+#| label: my-profile
+
+
+```
+
+**Background of my top data science skills:** *Replace with your text!*
+
+**Next things I want to learn in data science:** *Replace with your text!*
+
+
+## Average Profile of the Study Program {#sec-2}
+
+```{r}
+#| label: profiles_all_long
+
+
+```
+
+We have data from `r NA` students and instructors from the years `r NA` to  `r NA`. 
+
+Averaging all dimensions gives us the profile of the Study Program:
+
+```{r}
+#| label: program_profile
+
+
+```
+
+**The average member of the study program:** *Replace with your text!*
+
+
+### Different Cohorts {#sec-2.1}
+
+```{r}
+#| label: cohorts
+
+
+```
+
+**Trends for the profile of the average member:** *Replace with your text!*
+
+
+### Students and Instructors {#sec-2.2}
+
+```{r}
+#| label: students_instructors
+
+
+```
+
+**Difference between average instructors and students:** *Replace with your text!*
+
+
+## Dimension Analysis {#sec-3}
+
+Here we take a closer look at the distribution of competences concerning the different dimensions.  
+
+
+### Bar plots {#sec-3.1}
+
+```{r}
+#| label: dimensions-distribution
+#| fig-height: 9
+
+
+
+```
+
+**Assessment of diversity/uniformity of competences:** *Replace with your text!* 
+
+
+### Summary Statistics: Central Tendency and Dispersion {#sec-3.2}
+
+```{r}
+#| label: summary-statistics
+
+
+```
+
+**Most diverse dimensions:** *Replace with your text!* 
+
+
+### Correlation of Dimensions {#sec-3.3}
+
+These are the pairwise Pearson correlation coefficients:  
+
+```{r}
+#| label: correlation
+
+
+```
+
+**Which dimensions are positively correlated?** *Replace with your text!*
+
+**Which dimensions are negatively correlated?** *Replace with your text!*
+
+
+## Data Audit, Normalizing Dimensions {#sec-4}
+
+
+### Detecting the change in the survey answering scales {#sec-4.1}
+
+When did the Online Survey change to answering scales from 0 to 10 to 1 to 10?
+
+```{r}
+#| label: data-audit
+
+
+```
+
+*Replace with your text!*
+
+
+### Normalization idea {#sec-4.2}
+
+**New variable:** *Replace with your text!*
+
+**Drawbacks of it:** *Replace with your text!*
+
+**Which rating scales is prefereable 0-10 or 1-10?** *Replace with your text!*
+
+
+## Principal Component Analysis {#sec-5}
+
+The principal component analysis gives a more detailed description of how dimensions go together. 
+
+```{r}
+#| label: PCA
+
+
+```
+
+The standard deviations are: `r NA`
+
+The corresponding variances are: `r NA`
+
+The total sum of variance of all principal components is the same as the total variance of the standardized dimensions: `r NA`
+
+The percentages each PC explains of the total variance are: `r NA` 
+
+The cumulative percentages which the first principle components explains are: `r NA`. 
+
+
+### Variance Explained {#sec-5.1}
+
+```{r}
+#| label: explained_variance
+
+
+```
+
+With the first 3 principal components we can explain *Replace with the number!*% of the standardized variance of the seven dimensions
+
+
+### The first three Pricipal Component vectors {#sec-5.2}
+
+```{r}
+#| label: PCs
+
+
+```
+
+**PC1: *Replace your name!* ** *Replace with your text!*
+
+**PC2: *Replace your name!* ** *Replace with your text!* 
+
+**PC3: *Replace your name!* ** *Replace with your text!*
+
+
+### Individuals in Principal Component coordinates {#sec-5.3}
+
+The following plots locate every member in scatter plots with respect to PC1, PC2 and PC3.
+
+```{r}
+#| label: data_in_PC1_PC2_coordinates
+
+
+```
+
+```{r}
+#| label: data_in_PC1_PC3_coordinates
+
+
+```
+
+```{r}
+#| label: data_in_PC2_PC3_coordinates
+
+
+```
+
+**My profile in PC coordinates:** *Replace with your text!* 
+
+
+## Linear Models to explain Programming {#sec-6}
+
+Here we explore the linear relationships with the goal to explain and predict the value individuals assign to the profile dimension Programming.  
+
+
+### Using Mathematics, Data Visualization, and Machine Learning {#sec-6.1}
+
+First we explore the linear relationships with three scatterplots. 
+
+```{r}
+#| label: lm-plotting
+
+
+```
+
+**Qualitative Results:** *Replace with your text!* 
+
+```{r}
+#| label: mathdvml_mod
+
+```
+
+**One predictor models:** 
+
+**Mathematics:** When Mathematics increases by 1 unit, Programming increases on average by *Replace with number!* units.  
+
+**Data Visualization:** When Data Visualization increases by 1 unit, Programming increases on average by *Replace with number!* units.   
+**Machine Learning:** When Machine Learning increases by 1 unit, Programming increases on average by *Replace with number!* units.   
+
+**Three predictor model:** *Replace with interpretation text!*
+
+**Coefficients of determination:** The coefficients of determination are for Mathematics *Replace with number!*, Data Visualization *Replace with number!*, Machine Learning *Replace with number!*, and for all three predictors *Replace with number!*.
+
+
+### Using Statistics and Type  {#sec-6.2}
+
+First we explore the linear relationships with two scatter plots, one using color to distinguish between instructors and students and one without. 
+
+```{r}
+#| label: stattype
+
+
+```
+
+**Qualitative Results:** *Replace with your text!*
+
+```{r}
+#| label: stattype_mod
+
+
+```
+
+**Quantitative Results Coefficients for the four models by predictors**
+
+**Statistic:** When Statistics increases by 1 unit, Programming increases on average by *Replace with number!* units.
+
+**Type:** When the type is Instructor (the reference category) Programming is on average *Replace with number!*. When the type changes to Student it is *Replace with number!* less. That means the average student has Programming on average at *Replace with number!*. 
+
+**Statistics and Type:** In the model with Statistics and Type only as a main effect the coefficient for Statistics is *Replace with number!* and the reduction of intercept through the Type Student is *Replace with number!*. 
+
+**Statistics and Type and their interaction:** When the interaction effect is added the main coefficient of Statistics turns negative to account for the negative association for the Instructors (the reference category). The main intercept is even higher and the main effect of Type Students is even more negative. The slope of Statistics for Instructors is *Replace with number!* and this increases by *Replace with number!* for students. So, the slope of Statistics for Students is *Replace with number!*. 
